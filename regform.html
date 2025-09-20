@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form </title>
+</head>
+<body>
+    <fieldset>
+   <legend> <h2>Registrationn Form</h2></legend>
+
+    <form action="Welcome.html" >
+    <label for="fname">First Name: </label>
+    <input type = "text" id="fname" placeholder="Enter your name"
+     name = "fname" pattern="[A-Za-z]"><br>
+
+    <label for = "lname">Last Name: </label>
+    <input type = "text" id = "lname" name = "lname" maxlength="10"><br>
+
+    <label for = "no">Mobile no.</label>
+    <input type = "tel" id = "no" name = "Mo_number"><br>
+
+    <label for = "age">age</label>
+    <input type = "number" id = "age" min = 1 max = "100" name = "age" step = "5"><br>
+
+    <label for = "mail">Email Id</label>
+    <input type = "email" id = "mail" name = "mail" 
+    autofocus autocomplete="off"><br>
+    
+    <label for = "pass">Password</label>
+    <input type = "password" id  = "pass" name="password" required><br>
+
+    <input type = "button" value = "button">
+    
+    <label for = "dob" > DOB</label>
+    <input type = "date" id = "dob" name = "dob">
+
+    Color: <input type = "color">
+    Date&Time: <input type =  "datetime-local">
+
+    resume: <input type = "file" ><br>
+    <input type ="hidden" name = "data" value = "hiddendata">
+
+    month<input type = "month"><br>
+
+    <label for = "gender">Gender:  </label><br>
+    <input type = "radio" id = "gender" value = "female" name = "gender">Female:
+    <input type = "radio" id = "gender" value = "male" name = "gender">Male
+
+<br><br>    
+    <label for = "hobby">Hobbies</label>
+    singing<input type = "checkbox" id = "hobby"  value = "singing">
+    reading<input type = "checkbox" id = "hobby"  value = "reading">
+    playing<input type = "checkbox" id = "hobby"  value = "playing">
+    dancing <input type = "checkbox" id = "hobby"  value = "dancing">
+   
+    <label for = "city">Select City</label>
+    <select id = "city">
+    <option>Pune</option>
+    <option>Nashik</option>
+    <option>Mumbai</option>
+    <option>Bangluru</option>
+    <option>Haidrabad</option>
+    <option>Chennai</option>
+    <option>Indore</option>
+    <option>Jabalpur</option>
+    </select>
+
+
+   <textarea name="message" rows="2" cols="40"></textarea>
+
+   
+    
+   <input type = "text" value = "My text" readonly disabled>
+   
+   <input type = "submit" value = "submit" >
+
+
+    
+
+
+ 
+    </form>
+    </fieldset>
+</body>
+</html>

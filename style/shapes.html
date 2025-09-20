@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*
+        .outer{
+            background-color: blue;
+            width: 400px;
+            height: 200px;
+            padding: 50px;
+            /* border-width: 10px;
+            border-style: solid;
+            border-color: rgb(238, 211, 211); 
+            border: 10px dashed red;
+            border-radius: 20px;
+        }
+        .outer1{
+            background-color: brown;
+            width: 200px;
+            height: 150px;
+            padding: 50px;
+        }
+        .inner{
+            background-color: blueviolet;
+            width: 200px;
+            height: 100px;
+            padding: 50px;
+            border-radius: 50%;
+
+        }
+        .square {
+            width: 100px;
+            height: 100px;
+            background-color: aliceblue;
+            border: 2px solid black;
+            display: inline-block;
+        }
+        .circle{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: blueviolet;
+            border: 2px solid black;
+            display: inline-block;
+        }
+        .oval{
+            width: 100px;
+            height: 200px;
+            background-color: blue;
+            border: 2px solid black;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .rec{
+            width: 200px;
+            height: 100px;
+            background-color: rgb(92, 92, 148);
+            border: 2px solid black;
+            display: none;
+
+        }
+        .traingle{
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid rgb(172, 149, 149);
+            outline: 2px solid black;
+            display: inline-block;
+        }
+
+        a{
+         
+            background-color: chartreuse;
+            display: block;
+        }  */
+
+       .flex-box{
+        display: flex;
+        gap: 10px;
+        background-color: blueviolet;
+        padding: 10px;
+       }
+
+       .flex-box div {
+        background-color: tomato;padding: 20px; color: aliceblue;
+       }
+
+       .inline-flex-box{
+        display: inline-flex;
+        gap: 10px;
+       }
+
+      span div {
+        background-color: rgb(180, 121, 45);
+        color: aqua;
+        padding: 10px;
+      }
+
+    [href *= "google"] { 
+        color: rgb(21, 168, 45);
+    }
+
+
+    .btn{
+        color: cadetblue;
+        background-color: rgb(212, 206, 197);
+        border-radius: 20px;
+        font-size: 20px;
+    }
+
+    .btn:hover{
+        color: rgb(54, 201, 34);
+        background-color: rgb(190, 125, 28);
+        border-radius: 10px;
+        font-size: 50px;
+    }
+    .btn:active{
+        color: rgb(54, 201, 34);
+        background-color: rgb(199, 10, 136);
+        border-radius: 50px;
+        font-size: 20px;
+    }
+    
+    a{
+        color: blue;
+    }
+    a:visited{
+        color: red;
+    }
+    a:active {
+  color: green;
+}
+
+li:first-child{
+    color: brown;
+}
+li:last-child{
+    color: rgb(83, 24, 194);
+}
+li:nth-child(3){
+    color: aqua;
+}
+input:focus{
+   background-color: blueviolet;
+}
+
+.para{
+    color: cornflowerblue;
+}
+.para::first-letter {
+    color: brown;
+    font-size: 50px;
+}
+
+::selection{
+    background-color: black;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    background-color: antiquewhite;
+}
+
+.para::first-line{
+    color: blue;
+}
+
+.para::before{
+    content :"my para";
+}
+
+.para::after{
+    content: "thanks";
+}
+
+
+label::after{
+
+    content: "*";
+    color: red;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- <div class = "outer">
+
+        <div class = "outer1">
+
+            <div class = "inner">
+
+            </div>
+        </div>
+    </div>
+    
+   <h3>shapes</h3>
+   <div class = "square">Square </div>
+   <div class = "circle">Circule </div>
+   <div class = "oval">Oval </div>
+   <div class = "rec"> Rectrangle</div>
+   <div class = "traingle"> Traingle</div>
+   <br><br>
+
+   <a href = "#">Home</a>
+   <a href = "#">About</a>
+      <br><br> -->
+
+  <!-- <div class = "flex-box">
+    <div> Box1</div>
+    <div> Box2</div>
+    <div> Box3</div>
+  </div>
+  
+
+  <p>Lorem ipsum dolor sit amet. <span class="inline-flex-box">
+    <div>One</div>
+    <div>Two</div>
+  </span>   This is after.</p>
+
+
+
+<input type = "text" name = "" value >
+<input type = "number" name = "" value > -->
+
+<!-- <a href="https.sxbx.com">home</a>
+<a href="https.google.com">home</a>
+<a href="http.sxbx.in">home</a>
+<a href="www.google.in">home</a> -->
+
+
+<button class = "btn">Click Me</button>
+
+<a href = "prac.html">MyPage</a>
+
+<ul>
+  <li>Apple</li>
+  <li>Mango</li>
+  <li>Banana</li>
+  <li>Orange</li>
+  <li>Grapes</li>
+</ul>
+<div>
+<p class = "para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, illo?</p>
+</div>
+
+
+<form>
+     <label>First Name: </label>
+     <input type = "text">
+     <label>Last Name: </label>
+     <input type = "text">
+
+</form>
+
+
+</body>
+</html>

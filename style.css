@@ -1,0 +1,42 @@
+/* External style  */
+
+/* Universe selector */
+*{
+    margin: 0px;
+}
+
+
+/* div {
+    background-color: antiquewhite;
+    color:#8c6d7f
+} */
+
+
+/* element selector */
+h1 {
+    color: aqua;
+}
+
+
+/* Id Selector */
+#heading{
+    color: blue;
+}
+
+.box{
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(215, 222, 226);
+}
+
+
+/* group selector */
+/* div , h1{
+    font-size: 40px;
+    font-family: arial;
+} */
+
+nav div{
+    color: brown;
+}

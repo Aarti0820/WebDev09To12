@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cube{
+            width: 100px;
+            height: 100px;
+            background-color: azure;
+            outline: 1px solid;
+        }
+        .cube:hover{
+            background-color: brown;
+            transform: translate(100px , 50px);
+        }
+         .cube1{
+            width: 200px;
+            height: 100px;
+            background-color: rgb(7, 204, 204);
+            outline: 1px solid;
+        }
+        .cube1:hover{
+            background-color: rgb(138, 91, 91);
+            transform: rotate(45deg)
+        }
+        .cube2{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: rgb(7, 204, 204);
+            outline: 1px solid;
+        }
+        .cube2:hover{
+            background-color: rgb(138, 91, 91);
+            /* transform: scale(1.5) */
+           transform: rotateX(30deg);
+        }
+
+
+        #box{
+            width: 400px;
+            height: 300px;
+            outline: 1px solid;
+            margin: auto;
+            /* background: linear-gradient( red , yellow); */
+            /* background: radial-gradient(red , yellow , blue , green ) */
+            background: conic-gradient( red , green , yellow);
+        }
+        #box:hover{
+            background : repeating-radial-gradient(red , orange , purple);
+          
+        } 
+        body{
+            background: repeating-linear-gradient(to right bottom , white , gray 10%, white 10%);
+        }
+
+        button{
+            color: red;
+            background-color: antiquewhite;
+            transition: 2s;
+            transition-delay: 5s;
+        }
+        button:hover{
+             background-color: rgb(238, 143, 19);
+             transform: scale(1.6);
+        }
+
+        .box1{
+            width: 200px;
+            height: 200px;
+            outline: 2px solid;
+            background-color: aqua;
+            animation: bg-color 2s ease-in;
+        }
+
+        @keyframes bg-color {
+            0% {background-color : red}
+            20%{background-color: blue;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;}
+            50%{ background-color: brown;
+            transform: translate(100px);}
+        }
+        .circle{
+             width: 200px;
+             height: 200px;
+             border-radius: 50%;
+             background: radial-gradient(brown, yellow);
+             border: 2px solid;
+             animation: bounce 1s reverse forwards;
+           
+        }
+
+        @keyframes bounce{
+
+            /* 10%{transform: translateY(0px);}
+            30%{transform: translateY(-200px);} */
+            50%{transform: translate(500px);}
+            /* 100%{transform: scale(1.2);} */
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class = "cube"></div>
+     <div class = "cube1"></div>
+     <div>
+     <div class = "cube2"></div>
+     </div>
+
+<div style="width:150px;height:150px;background:purple;
+transform: perspective(400px) rotateZ(60deg);">
+  3D Rotated Box
+</div>
+
+<br><br>
+
+<div id = "box">
+
+</div>
+
+
+
+<button>Click</button>
+
+
+<div class = "box1"></div>
+
+
+<br><br>
+
+<div class = "circle"></div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+<center>
+    <h2 style="background-color: rgb(83, 126, 126);">Registration Form</h2>
+    <table border="2" cellpadding = "10px" cellspacing = "10px"
+    
+    style="background-color: burlywood;">
+        <form action = "Welcome.html" method = "get">
+            <tr>
+                <td><label>First Name:</label></td>
+                <td><input type="text" placeholder="Enter Name" name="fname"></td>
+            </tr>
+
+            <tr>
+                <td><label>Last Name:</label></td>
+                <td><input type="text" placeholder="Enter Name" name="lname"></td>
+            </tr>
+
+             <tr>
+                <td><label>age:</label></td>
+                <td><input type="number" name="age" min="1" max="100"></td>
+            </tr>
+
+             <tr>
+                <td><label>Password:</label></td>
+                <td><input type="password" name="pass"   max = "8" required></td>
+            </tr>
+
+            <tr align = "center">
+                <td colspan="2">
+                <input type = "submit" value = "submit" style="width: 300px;"></td>
+            </tr>
+            <tr>
+                <td><input type= "reset" value = "undo"></td>
+            </tr>
+
+        </form>
+    </table>
+    </center>
+
+
+    <nav>
+        <button><a href = "#">home</a></button>
+        <button><a href = "#">home</a></button>
+        <button><a href = "#">home</a></button>
+      
+        <input type = "text" value = "Readonly" readonly>
+
+        <button disabled>Click me</button>
+   <br>
+    </nav>
+
+
+    <input type = "text" placeholder="Enter name" maxlength="5"  autofocus>
+    <input type = "number"  min = "0" step = "10">
+</body>
+
+</html>
