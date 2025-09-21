@@ -117,6 +117,7 @@ else if(age > 60 && age <= 120){
     }
 else {
    console.log("Invalid age");
+   greet();
 }
 
 let num = 1;
@@ -158,3 +159,81 @@ default:
 }
 
 
+
+
+//loops ....
+// 1. for loop
+// let table = 2;
+
+// for(let i = 1; i<=10 ; i++)
+// {
+//     console.log(`${table} x ${i} = ${i * table}`);  
+// }
+
+// for(let i = 10; i>=1; i--){
+//     console.log(`reverse loop : ${i}`);
+    
+// }
+
+// let i = 1;
+// while(i<=10){
+//     //console.log(`while loop : ${i}`);
+//     i++;
+// }
+
+
+// let j = 1;
+//     console.log(j);
+//     j++;
+// }
+// while(j>=10);
+
+// functions
+//function is block of code perform specific task ...
+//pre-define function             
+// user define 
+
+//syntax--> 
+//define 
+function greet(){
+    console.log("Good Morning....");
+}
+
+//execute/call
+
+
+//parametrized function
+
+function greetStudent(){
+    if(true){
+      let x1 = 10;
+     // console.log(`Hello ${name} Welcomem To WebDev Class!  ${x1}`);
+      console.log(`var inside if block ${x1}`);
+    }
+     //console.log(`var outside if block ${x1}`);
+     
+}
+
+ let val = greetStudent();
+ console.log(val);
+
+//function with Return Type 
+function add(a , b){
+    return "hello";
+} 
+
+
+ let result = add(100 , 200);
+ console.log(result);
+
+ //Anonymous function 
+
+  let multiply = function(x, y){
+    return x*y;
+ };
+
+ console.log(`Multiplication is:, ${multiply(4,3)}`);
+
+ //Arrow Function
+
+ console.log(greet2(10 , 2));
