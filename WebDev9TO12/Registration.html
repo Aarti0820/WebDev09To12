@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration from</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> -->
+</head>
+<body>
+
+    <div class = "container">
+    <h2>Application Form</h2>
+     <form id = "jobForm" onsubmit = "return valid()">
+        <div class = "input-box">
+            <label for = "name">Full Name : </label>
+            <input type = "text" id = "name" placeholder="Enter Your Name"> 
+            <p class = "error" id = "nameError"></p>
+        </div>
+
+         <div class = "input-box">
+            <label for = "email">Email : </label>
+            <input type = "email" id = "email" placeholder="Enter Your mail"> 
+            <p class = "error" id = "emailError"></p>
+        </div>
+
+         <div class = "input-box">
+            <label for = "Phone">Phone Number : </label>
+            <input type = "tel" id = "Phone" placeholder="Enter Your Number"> 
+            <p class = "error" id = "phoneError"></p>
+        </div>
+
+         <div class = "input-box">
+            <label for = "position">Position Applied For: </label>
+            <select id = "position">
+                <option value = "">Select Position</option>
+                <option>FrontEnd Developer</option>
+                 <option>BckEnd Developer</option>
+                  <option>Java Developer</option>
+                   <option>SQL Developer</option>
+                    <option>Full Stack Developer</option>
+            </select>
+            <p class = "error" id = "positionError"></p>
+         </div>
+
+         <div class = "input-box">
+            <label for = "resume">Upload Resume</label>
+            <input type = "file" id = "resume">
+            <p class = "error" id = "resumeError"></p>
+         </div>
+        
+
+         <button type = "submit">Submit Application</button>
+         <p class = "success" id = "successMsg"></p>
+     </form>
+
+    </div>
+
+
+
+
+    <!-- <form onsubmit = "return valid()">
+        <input type = "text" id = "name"> 
+        <button type = "submit">Submit </button>
+    </form> -->
+
+   
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> -->
+      <script src = "Registration.js"></script>
+</body>
+</html>

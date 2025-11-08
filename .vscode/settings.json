@@ -13,5 +13,8 @@
     "editor.inlineSuggest.enabled": false,
     "editor.snippetSuggestions": "none",
     "javascript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": false,
-    "typescript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": false
+    "typescript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": false,
+    "editor.quickSuggestions": {
+        "strings": "on"
+    }
 }

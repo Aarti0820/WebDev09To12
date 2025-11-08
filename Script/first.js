@@ -57,32 +57,32 @@
 // Arithmetic Operators + , - , * , / , % ,
 let a = 10;
 let b = 13;
-console.log(a + b); // Addition Operator -->13
-console.log(a - b); // Subtraction Operator --> 7
-console.log(a * b); // Multiplication Operator --> 30
-console.log(a / b); // Division Operator --> 3.3333
-console.log(a % b); // Modulus Operator --> 1
+// console.log(a + b); // Addition Operator -->13
+// console.log(a - b); // Subtraction Operator --> 7
+// console.log(a * b); // Multiplication Operator --> 30
+// console.log(a / b); // Division Operator --> 3.3333
+// console.log(a % b); // Modulus Operator --> 1
 
 // Assignment Operators = , += , -= , *= , /= , %=
 let c = 10;
 console.log(c); //10
 
   a+=b;      // a = a + b;  // a = 10 + 3;
-    console.log(a); //13
+   // console.log(a); //13
 
  // Comparison Operators  == , === , != , !== , > , < , >= , <=
  let x = 10;
  let y = 10;
- console.log(x >= y); 
+ //console.log(x >= y); 
  
 
  // Logical Operators  && , || , !
- console.log(!(x >= y)  || (x<y));   
+ //console.log(!(x >= y)  || (x<y));   
  
  // Ternary Operator  condition ? expr1 : expr2
-    let age = 18;
-    let statement = age >= 18 ? "You are eligible to vote" : "You are not eligible to vote";
-    console.log(statement);
+    // let age = 18;
+    // let statement = age >= 18 ? "You are eligible to vote" : "You are not eligible to vote";
+    // console.log(statement);
 
 //unary Operators   
 //Increment --> 1. preIncrement  2. postIncrement , ++  
@@ -99,64 +99,64 @@ console.log(c); //10
 
 //Conditional Statements
 // if , if-else , if-else-if , switch-case
-console.log(age);
+//console.log(age);
  // 1- 18   --> not adult
  // 18 - 60 --> adult
  // 60+     --> senior citizen
 
 
- age = -4674;
-if(age >= 1 && age <= 18){
-    console.log("not adult");
-}
-else if(age > 18 && age <= 60){
-      console.log("adult"); 
-    }
-else if(age > 60 && age <= 120){
-       console.log("senior citizen");   
-    }
-else {
-   console.log("Invalid age");
-   greet();
-}
+//  age = -4674;
+// if(age >= 1 && age <= 18){
+//     console.log("not adult");
+// }
+// else if(age > 18 && age <= 60){
+//       console.log("adult"); 
+//     }
+// else if(age > 60 && age <= 120){
+//        console.log("senior citizen");   
+//     }
+// else {
+//    console.log("Invalid age");
+//    greet();
+// }
 
-let num = 1;
-if(num % 2 == 0){
-    console.log("Even Number");
-}
-else{
-    console.log("Odd Number");
+// let num = 1;
+// if(num % 2 == 0){
+//     console.log("Even Number");
+// }
+// else{
+//     console.log("Odd Number");
     
-}
+// }
 
 
 // switch-case
-let day = 3;
-switch(day){
-case 1:
-    console.log("Monday");
-    break;
-case 2:
-    console.log("Tuesday");
-    break;
-case 3:
-    console.log("Wednesday");
-    break;
-case 4:
-    console.log("Thursday");
-    break;
-case 5:
-    console.log("Friday");
-    break;
-case 6:
-    console.log("Saturday");
-    break;
-case 7:
-    console.log("Sunday");
-    break;
-default:
-    console.log("Invalid Day");
-}
+// let day = 3;
+// switch(day){
+// case 1:
+//     console.log("Monday");
+//     break;
+// case 2:
+//     console.log("Tuesday");
+//     break;
+// case 3:
+//     console.log("Wednesday");
+//     break;
+// case 4:
+//     console.log("Thursday");
+//     break;
+// case 5:
+//     console.log("Friday");
+//     break;
+// case 6:
+//     console.log("Saturday");
+//     break;
+// case 7:
+//     console.log("Sunday");
+//     break;
+// default:
+//     console.log("Invalid Day");
+// }
 
 
 
@@ -195,45 +195,86 @@ default:
 
 //syntax--> 
 //define 
-function greet(){
-    console.log("Good Morning....");
-}
+// function greet(){
+//     console.log("Good Morning....");
+// }
 
 //execute/call
 
 
 //parametrized function
 
-function greetStudent(){
-    if(true){
-      let x1 = 10;
-     // console.log(`Hello ${name} Welcomem To WebDev Class!  ${x1}`);
-      console.log(`var inside if block ${x1}`);
-    }
-     //console.log(`var outside if block ${x1}`);
+// function greetStudent(){
+//     if(true){
+//       let x1 = 10;
+//      // console.log(`Hello ${name} Welcomem To WebDev Class!  ${x1}`);
+//       console.log(`var inside if block ${x1}`);
+//     }
+//      //console.log(`var outside if block ${x1}`);
      
+// }
+
+//  let val = greetStudent();
+//  console.log(val);
+
+// //function with Return Type 
+// function add(a , b){
+//     return "hello";
+// } 
+
+
+//  let result = add(100 , 200);
+//  console.log(result);
+
+//  //Anonymous function 
+
+//   let multiply = function(x, y){
+//     return x*y;
+//  };
+
+//  console.log(`Multiplication is:, ${multiply(4,3)}`);
+
+//  //Arrow Function
+
+//  console.log(greet2(10 , 2));
+
+ //iif
+ (function (){
+     console.log("hello");
+ })();
+
+
+ //nested function 
+ function greet(){
+    console.log("Hello ..... from greet function");
+
+    function goodBy(){
+        console.log("by....");
+    }
+
+
+     goodBy();
+ }
+
+
+ greet();
+
+
+ //call back function 
+
+function add(a , b , callback , callback2){
+       console.log(`addition is ${a+b}`);
+       callback();
+       callback2();
 }
 
- let val = greetStudent();
- console.log(val);
+function calculation(){
+    console.log("Calculation is done..");
+}
+function calculation2(){
+    console.log("Calculation ..");
+    
+}
 
-//function with Return Type 
-function add(a , b){
-    return "hello";
-} 
 
-
- let result = add(100 , 200);
- console.log(result);
-
- //Anonymous function 
-
-  let multiply = function(x, y){
-    return x*y;
- };
-
- console.log(`Multiplication is:, ${multiply(4,3)}`);
-
- //Arrow Function
-
- console.log(greet2(10 , 2));
+add(10 , 20 , calculation , calculation2);
